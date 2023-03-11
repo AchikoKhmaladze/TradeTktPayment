@@ -219,12 +219,37 @@
     <script src="index.js"></script>
 
 
-
-
+<script src="https://unpkg.com/scrollreveal"></script>
     <script>
+
+        const scr1 = ScrollReveal({
+            reset: false,
+            distance: "80px",
+            duration: 1500,
+        });
+
+        scr1.reveal(".section-header", {
+            delay: 200,
+            origin: "bottom",
+        });
+
+        const scr2 = ScrollReveal({
+            reset: false,
+            distance: "80px",
+            duration: 2000,
+        });
+
+        scr2.reveal(".payment-section", {
+            delay: 200,
+            origin: "bottom",
+        });
+
+
 
 
     </script>
+
+    
 
 </body>
 
