@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: rgb(192, 192, 192);
+}
+
+.top-bar {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(46, 46, 46);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-nav {
+  height: 90px;
+  background-color: rgb(58, 58, 58);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.contact {
+  display: flex;
+  position: relative;
+  right: 100px;
+}
+
+.auth-container {
+  display: flex;
+  position: relative;
+  left: 100px;
+}
+
+.auth-container button {
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sign-in {
+  font-size: 13px;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  color: rgb(250, 109, 14);
+  border-right: 2px solid grey;
+  padding-right: 10px;
+}
+
+.sign-up {
+  border: none;
+  font-size: 13px;
+  color: rgb(167, 165, 165);
+  margin-left: 10px;
+  transition: 0.2s;
+}
+
+.phone-info,
+.email-info {
+  display: flex;
+  align-items: center;
+}
+
+.email-info p,
+.phone-info p {
+  font-size: 14px;
+  color: rgb(155, 154, 154);
+}
+.email-info p {
+  margin-left: 15px;
+}
+
+.phone-info p {
+  margin-right: 20px;
+}
+
+.fa-phone {
+  margin-right: 10px;
+  color: rgb(250, 109, 14);
+  font-size: 14px;
+}
+
+.fa-envelope {
+  color: rgb(250, 109, 14);
+  font-size: 14px;
+}
+
+.logo-svg {
+  width: 220px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav li {
+  margin-left: 20px;
+  color: rgb(223, 223, 223);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.basket {
+  width: 80px;
+  height: 35px;
+  border-radius: 20px;
+  background: none;
+  border: 1px solid rgb(250, 109, 14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.basket p {
+  color: white;
+  margin-right: 10px;
+}
+
+.fa-cart-shopping {
+  color: white;
+}
+
+.nav li:hover {
+  color: rgb(255, 255, 255);
+}
+
+.sign-up:hover {
+  color: rgb(212, 212, 212);
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 20px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.2s;
+}
+
+.nav-item:hover::before {
+  width: 100%;
+}
+
+.logo {
+  position: relative;
+  right: 45px;
+}
+
+.menu {
+  position: relative;
+  left: 50px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  height: 23px;
+  width: 30px;
+  justify-content: space-between;
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 100%;
+  position: relative;
+  height: 2px;
+  background-color: white;
+}
+
+.navbar :nth-child(1) button {
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  display: flex;
+  transition: right 0.2s;
+  z-index: 5;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-right: 50px;
+  padding-left: 90px;
+  padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+}
+.navbar ul li {
+  margin-top: 30px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  font-weight: 500;
+  color: rgb(199, 199, 199);
+  transition: color 0.2s;
+}
+
+.navbar ul li:hover {
+  color: rgb(255, 255, 255);
+}
+
+.fa-x {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: rgb(187, 187, 187);
+  font-size: 24px;
+  cursor: pointer;
+  transition: right 0.2s;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: rgba(139, 138, 138, 0.8);
+  display: none;
+}
+
+.section-header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-header h1 {
+  color: rgb(112, 112, 112);
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.payment-method {
+  display: flex;
+}
+
+.credit-card,
+.paypal {
+  width: 130px;
+  height: 100px;
+  margin: 15px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fa-paypal,
+.fa-credit-card {
+  font-size: 25px;
+}
+
+.credit-card p,
+.paypal p {
+  font-size: 15px;
+  margin-top: 10px;
+  color: rgb(88, 88, 88);
+  font-weight: 500;
+}
+
+.border {
+  height: 2px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  width: 500px;
+  background-color: rgb(156, 154, 154);
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 400px; */
+}
+
+.user-name {
+  display: flex;
+  flex-direction: column;
+}
+.user-name label {
+  margin-bottom: 10px;
+  color: rgb(71, 71, 71);
+  font-weight: 500;
+}
+
+.name-input {
+  width: 400px;
+  outline: none;
+  height: 45px;
+  background: none;
+  padding: 0px 15px;
+}
+
+input {
+  font-size: 17px;
+  border: 1px solid rgb(145, 144, 144);
+  border-radius: 3px;
+}
+
+.user-card-info {
+  display: flex;
+  margin-top: 15px;
+}
+
+.card-number input {
+  width: 270px;
+  height: 45px;
+  background: none;
+  padding: 0px 20px;
+}
+.cvv {
+  margin-left: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cvv input {
+  width: 110px;
+  height: 45px;
+  background: none;
+  padding: 0px 20px;
+}
+
+.user-card-info input {
+  outline: none;
+}
+
+.user-card-info label {
+  margin-bottom: 10px;
+  color: rgb(71, 71, 71);
+  font-weight: 500;
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  width: 190px;
+  height: 45px;
+  padding: 0px 20px;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid rgb(145, 144, 144);
+  border-radius: 3px;
+  background: none;
+  color: rgb(41, 41, 41);
+}
+
+option {
+  background-color: #fff;
+  color: #333;
+}
+
+.user-birth {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.month-select {
+  margin-right: 20px;
+}
+
+.user-birth p {
+  margin-bottom: 10px;
+  color: rgb(71, 71, 71);
+  font-weight: 500;
+}
+
+.payment-submit button {
+  width: 230px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.cancel-payment {
+  border: 1px solid rgba(255, 84, 5, 0.932);
+  border-radius: 3px;
+  background: none;
+}
+
+.cancel-payment {
+  color: rgba(255, 84, 5, 0.932);
+  font-size: 16px;
+}
+
+.confirm-payment {
+  color: white;
+  font-size: 16px;
+  background-color: rgba(255, 84, 5, 0.932);
+  border: none;
+  border-radius: 3px;
+  margin-left: 25px;
+  transition: 0.2s;
+}
+
+.payment-submit {
+  display: flex;
+}
+
+.confirm-payment:hover {
+  background-color: rgba(255, 55, 5, 0.918);
+}
+
+.question-mark {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.question-mark-wrapper {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+}
+
+.question-mark-wrapper::before {
+  content: "It is a 3 or 4 digits code that you will find on the back of your card. American Express cards have it located on the front side.";
+  position: absolute;
+  padding: 20px;
+  scale: 0;
+  /* display: fixed; */
+  transform-origin: top center;
+  transition: width, scale ease-in-out 0.1s;
+  border-radius: 5px;
+  width: 300px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 15px;
+  left: -150px;
+  top: 40px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2), -2px -2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.question-mark-wrapper:hover::before {
+  scale: 1;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-reveal {
+  display: none;
+}

@@ -1,0 +1,244 @@
+@media screen and (max-width: 955px) {
+  .menu,
+  .auth-container {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  .top-bar,
+  .main-nav {
+    justify-content: space-between;
+  }
+  .logo,
+  .contact {
+    right: 0px;
+    margin-left: 30px;
+  }
+  .main-nav {
+    height: 70px;
+  }
+  .logo-svg {
+    width: 180px;
+  }
+  .fa-cart-shopping {
+    color: rgb(228, 225, 225);
+  }
+  .basket p {
+    color: rgb(231, 230, 230);
+    font-size: 14px;
+  }
+  .sign-up {
+    color: black;
+  }
+  .nav-item:hover::before {
+    width: 0%;
+  }
+  .navbar {
+    display: flex;
+  }
+  .sign-in,
+  .sign-up {
+    font-size: 14px;
+  }
+  .sign-up {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buy-ticket {
+    font-size: 10px;
+  }
+
+  .burger {
+    height: 20px;
+    width: 27px;
+  }
+  .main-nav {
+    height: 60px;
+  }
+  .logo-svg {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contact {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .question-mark-wrapper::before {
+    top: 50px;
+    left: -320px;
+  }
+}
+
+@media screen and (max-width: 542px) {
+  .border {
+    width: 90%;
+  }
+
+  .section-header h1 {
+    font-size: 20px;
+  }
+
+  .user-info {
+    width: 100%;
+  }
+  .user-name {
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+  }
+  .name-input {
+    width: 90%;
+  }
+
+  .user-card-info {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .card-number {
+    width: 90%;
+    text-align: center;
+  }
+  #cardnumber {
+    width: 100%;
+  }
+  .cvv {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  #cardcvv {
+    width: 100%;
+  }
+  .payment-submit {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-birth {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .month-select,
+  .year-select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .year-select {
+    margin-top: 15px;
+  }
+  .months,
+  .years {
+    width: 90%;
+  }
+  .month-select {
+    margin-right: 0px;
+  }
+  .payment-submit button {
+    width: 90%;
+  }
+  .confirm-payment {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .payment-method {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .credit-card,
+  .paypal {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .top-bar {
+    height: 60px;
+  }
+  .logo {
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .logo-svg {
+    width: 140px;
+  }
+  .burger {
+    right: 25px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+
+  .phone-info p,
+  .email-info p {
+    font-size: 13px;
+  }
+  .email-info {
+    margin-top: 7px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .section-header h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 262px) {
+  .section-header h1 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .question-mark-wrapper::before {
+    top: 50px;
+    left: -220px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  .question-mark-wrapper::before {
+    left: -190px;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .navbar ul {
+    padding-left: 50px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 245px) {
+  .navbar ul {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  #cardnumber::placeholder {
+    font-size: 14px;
+  }
+}
